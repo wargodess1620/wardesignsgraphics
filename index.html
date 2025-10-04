@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wardesigns Graphics & Printing</title>
+  <link rel="stylesheet" href="css\style.css\style.css" />
+</head>
+<body>
+  <header>
+  <img src="Wardesign Logo.png" alt="Wardesigns Logo" class="logo">
+  <h1>Wardesigns Graphics & Printing</h1>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+  <main class="hero">
+  <h2>Creative Designs</h2>
+  <p>We create professional designs for flyers, tarpaulins, invitations,logo's and social media that elevate your brand image.</p>
+  <p>Designed with passion. Crafted with creativity.</p>
+</main>
+
+    <section id="what-we-do">
+  <div class="tabs">
+    <input type="radio" id="tab1" name="tab-group" checked>
+    <label for="tab1">Graphic Design</label>
+
+    <input type="radio" id="tab2" name="tab-group">
+    <label for="tab2">Logo Creation</label>
+
+    <input type="radio" id="tab3" name="tab-group">
+    <label for="tab3">Printing Services</label>
+
+    <input type="radio" id="tab4" name="tab-group">
+    <label for="tab4">Souvenirs and Stickers</label>
+
+
+    <div id="content1" class="tab-content">
+      <h2>Graphic Design</h2>
+      <p>Transforming your ideas into powerful visual impact.</p>
+      <p>Where creativity meets purpose.</p>
+    </div>
+
+    <div id="content2" class="tab-content">
+      <h3>Logo Creation</h3>
+      <p>We craft unique, memorable logos that define your identity and make your brand stand out.</p>
+    </div>
+
+    <div id="content3" class="tab-content">
+      <h3>High-Quality Prints</h3>
+      <p>We deliver top-quality prints for business cards, posters, and marketing materials—affordable and durable.</p>
+    </div>
+    <div id="content4" class="tab-content">
+      <h3>Souvenirs and Stickers</h3>
+      <p>Make every occasion memorable with personalized souvenirs.</p>
+    </div>
+
+  </div>
+</section>
+
+
+    <section class="cta">
+  <h3>Ready to start your project?</h3>
+  <p>Email us at <a href="mailto:wardesignings@gmail.com">wardesignings@gmail.com</a> or call <a href="tel:09852500662">0985 250 0662</a></p>
+  <a href="contact.html" class="btn">Contact Us</a>
+</section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Wardesigns Graphics & Printing | <a href="https://web.facebook.com/wardesigning" target="_blank">Facebook</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
+

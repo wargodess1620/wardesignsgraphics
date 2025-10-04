@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio | Wardesigns Graphics & Printing</title>
+  <link rel="stylesheet" href="css\style.css\style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Wardesigns</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="contact.html" class="contact-cta">Contact</a>
+      </nav>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="portfolio">
+      <h2>Our Portfolio</h2>
+      <p class="intro">Browse our creative works across different design categories.</p>
+
+      <div class="tabs">
+        <!-- Tabs for Portfolio -->
+        <input type="radio" id="tab1" name="tab-group" checked>
+        <label for="tab1">Logo</label>
+
+        <input type="radio" id="tab2" name="tab-group">
+        <label for="tab2">Layouts</label>
+
+        <input type="radio" id="tab3" name="tab-group">
+        <label for="tab3">Resumes</label>
+
+        <input type="radio" id="tab4" name="tab-group">
+        <label for="tab4">Souvenirs and Stickers</label>
+
+        <!-- Tab 1: Logo Designs -->
+        <div id="content1" class="tab-content">
+          <div class="portfolio-grid">
+            <a href="images/Lorns Logo.png" target="_blank"><img src="images/Lorns Logo.png" alt="Logo 1"></a>
+            <a href="imgaes/SC Logo.png" target="_blank"><img src="images/SC Logo.png" alt="Logo 2"></a>
+            <a href="images/HR Logo.png" target="_blank"><img src="images/HR Logo.png" alt="Logo 3"></a>
+          </div>
+        </div>
+
+        <!-- Tab 2: Layouts -->
+        <div id="content2" class="tab-content">
+          <div class="portfolio-grid">
+            <a href="images/Driana Sapon Invitation.png" target="_blank"><img src="images/Driana Sapon Invitation.png" alt="Layouts 1"></a>
+            <a href="images/SC Calling Card (1).png" target="_blank"><img src="images/SC Calling Card (1).png" alt="Layouts 2"></a>
+            <a href="images/_Invitation 3R.png" target="_blank"><img src="images/_Invitation 3R.png" alt="Layouts 3"></a>
+          </div>
+        </div>
+
+        <!-- Tab 3: Resumes -->
+        <div id="content3" class="tab-content">
+          <div class="portfolio-grid">
+            <a href="images/Mulingtapang CV 1 (1).jpg" target="_blank"><img src="images/Mulingtapang CV 1 (1).jpg" alt="Resume 1"></a>
+          </div>
+        </div>
+
+        <!-- Tab 4: Souvenirs and Stickers -->
+        <div id="content4" class="tab-content">
+          <div class="portfolio-grid">
+            <a href="images/souvenir1.jpg" target="_blank"><img src="images/souvenir1.jpg" alt="Souvenir 1"></a>
+            <a href="images/souvenir2.jpg" target="_blank"><img src="images/souvenir2.jpg" alt="Souvenir 2"></a>
+            <a href="images/souvenir3.jpg" target="_blank"><img src="images/souvenir3.jpg" alt="Souvenir 3"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Wardesigns Graphics & Printing | <a href="https://web.facebook.com/wardesigning" target="_blank">Facebook</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
